@@ -1,0 +1,42 @@
+\section{The Application}\label{algo}
+Before starting the work on the web application I need to know the requirements, in order to make a decision on the best way to proceed. As the first step I need to know how the implementation of the allocation algorithm \cite{Chiarandini2019} work and how communication between the web application and the program are to be handled.\\\\
+% short description of what the program does
+The implementation is written in python and can be installed as a module through pip. For the program to solve the problem it makes use of a 3rd party solver, Gurobi \cite{adsig_mod_readme}, in order to perform the calculations needed.\\This program, when given a case to solve, computes an optimal solution to the problem and saves that solution, along with logs containing information about it, as files on the computer on which it is running.
+
+\subsection{Input}\label{algo_in}
+As input the allocation program requires four files containing information about the case to perform the computation:
+\begin{itemize}
+\item A file containing information about all the available topics to be assigned to students.
+\item A file containing information about the students to be assigned.
+\item A file containing information about what type of student can be assigned to which topics.
+\item A file specifying how many groups each advisors is able to manage.
+\end{itemize}
+When a user wants to start the computation the allocation software expects two arguments, a path to the folder containing the required files and a set of key:value pairs specifying the parameters needed to perfom the computation.\\
+These parameters are the following:
+\begin{itemize}
+	\item \verb|allsol|: Indicating whether or not all the best solutions should be presented or only one of them.
+	\item \verb|instability|: Indicating whether unstable solutions are allowed. Instability is when an incentive exists for a student to change to another topic, for example when a student has been assigned to their 3rd priority but their 1st or 2nd priority still has capacity left to receive other students.
+	\item \verb|expand_topics|: Indicating whether the file containing information about the topics is already expanded into teams.
+	\item \verb|groups|: Indicating whether groups are predefined and locked or if students can be added to a group during the computation.
+	\item \verb|Wmethod|: Which method should be used to determine if a solution is optimal.
+	\item \verb|cut_off_type|: Some students may have a special type giving them an advantage regarding the priority list. If such a type should be taken into consideration it is given as this parameter.
+	\item \verb|cut_off|: A number specifying the worst priority a student with the \verb|cut_off_type| can be assigned to.
+	\item \verb|prioritize_all|: A true/false check, if this is set to true all topics will be appended to the priority lists of all students, tied and the lowest priority.
+	\item \verb|allow_unassigned|: Whether or not students can be placed into placeholder projects in the case there is not enough capacity.
+	\item \verb|min_preferences|: The minimum number of preferences a student must have submitted.
+	\item \verb|solution_file|: Path to where the file containing the solution should be placed.
+\end{itemize}
+All the input parameters of the computation should be adjustable by the user from an easy to use interface.
+Since the number of students and topics could be hundreds, importing them into the web application manually one at a time was not feasible and should be handled by importing the data from an excel document. The decision to use excel documents was made based on the intended users familiarity with the previous workflow of extracting the data from a database as an excel document.
+
+\subsection{Output}\label{algo_out}
+When a solution has been found a number of files are created, in which the solution is stored. These files also store some statistics of the solution and logs of the computation. Specifically the output are files containing the following:
+\begin{itemize}
+	\item Statistics of the solution such as: number of students, number of teams and the number of students who was assigned to priority $n$.
+	\item A list of students with incentive to want another topic.
+	\item The assignment of students to projects for the solution.
+	\item A summary of the projects used in the computation.
+	\item A summary of all students' list's of preferences.
+	\item A summary of the students used in the computation.
+\end{itemize}
+This output data should then be read by the web application and presented in a user-friendly and transparent manner, such that none of the advisors or students feel ``cheated'' when the solution is presented. The presentation of the solution should be through relevant diagrams and tables.

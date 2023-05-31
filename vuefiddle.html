@@ -1,0 +1,187 @@
+<!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+<script type="importmap">
+  {
+    "imports": {
+      "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+    }
+  }
+</script>
+<!-- <script type="module" src="/Grid.js"></script> -->
+
+<body>
+<div id="app">
+  <button type="submit" @click="tog1()">Do it for 1</button>
+  <button type="submit" @click="tog2()">Do it for 2</button>
+  <div v-if="con1 && con2">
+  <h1>[[msg]]</h1>
+  <input v-model="msg">
+  <input type="checkbox" @click="all" :checked="c_all" v-model="selected" name="1">
+  <input type="checkbox" @click="one([[name]])" v-model="selected" name="2">
+  <input type="checkbox" @click="one([[name]])" v-model="selected" name="3">
+  <input type="checkbox" @click="one([[name]])" v-model="selected" name="4">
+  [[selected]]
+</div>
+</div>
+
+<div id="search">
+  <div>
+    <input
+      type="text"
+      v-model="searchText"
+      placeholder="search for scenario"
+      autocomplete="off"
+      v-on:keyup="search"/>
+  </div>
+  <div v-if="filteredResults.length > 0">
+    <div v-for="opt in filteredResults.slice(0,5)">[[opt]]</div>
+  </div>
+  <div v-else>
+    <div v-for="opt in options.slice(0,3)" role="button">[[opt]]</div>
+  </div>
+  [[options]]
+</div>
+<div class="container-fluid p-2">
+<div id="table_assign">
+  <form id="search_tab">
+  <input name="query" v-model="searchQuery" placeholder="search for entry in table">
+  </form>
+  <table class="table table-striped table-sm" v-if="filteredData.length">
+  <thead>
+      <tr>
+        <th v-for="key in gridColumns"
+            @click="sortBy(key)"
+            :class="{ active: sortKey == key }">
+            [[ capitalize(key) ]]
+            <span class="bi" :class="sortOrders[key] > 0 ?  'bi-sort-down-alt' : 'bi-sort-down'"></span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="entry in filteredData">
+          <td v-for="key in gridColumns"> [[ entry[key] ]]</td>
+        </tr>
+      </tbody>
+    </table>
+    <p v-else>No matches found.</p>
+</div>
+</div>
+
+</body>
+
+
+
+<script type="module">
+import {createApp} from 'vue'
+
+createApp({
+    delimiters:['[[',']]'],
+      data() {
+        return {
+          searchQuery: '',
+          gridColumns: ['name', 'power'],
+          gridData: [
+      { name: 'Chuck Norris', power: Infinity },
+      { name: 'Bruce Lee', power: 9000 },
+      { name: 'Jackie Chan', power: 7000 },
+      { name: 'Jet Li', power: 8000 }
+    ],
+            sortKey: '',
+            sortOrders: ['name', 'power'].reduce((o, key) => ((o[key] = 1), o), {}),
+        }
+      },
+    computed: {
+        filteredData() {
+          const sortKey = this.sortKey
+          const filterKey = this.searchQuery && this.searchQuery.toLowerCase()
+          const order = this.sortOrders[sortKey] || 1
+          let data = this.gridData
+          if (filterKey) {
+            data = data.filter((row) => {
+              return Object.keys(row).some((key) => {
+                return String(row[key]).toLowerCase().indexOf(filterKey) > -1
+              })
+            })
+          }
+          if (sortKey) {
+            data = data.slice().sort((a, b) => {
+              a = a[sortKey]
+              b = b[sortKey]
+              return (a === b ? 0 : a > b ? 1 : -1) * order
+            })
+          }
+          return data
+        }
+      },
+      methods: {
+        sortBy(key) {
+          this.sortKey = key
+          this.sortOrders[key] = this.sortOrders[key] * -1
+        },
+        capitalize(str) {
+          return str.charAt(0).toUpperCase() + str.slice(1)
+        }
+      },
+  }).mount('#table_assign')
+
+createApp({
+    delimiters:['[[',']]'],
+    data() {
+      return {
+        searchText: "",
+        filteredResults: [],
+        options: ["test1","test2","test3","test4","test5","test6","test7","test8","test9","test10"],
+      };
+    },
+    methods: {
+      search() {
+        this.filteredResults = [];
+        if (this.searchText == null || 
+          (this.searchText != null && this.searchText.length === 0))
+        {
+          this.filteredResults = [];
+        } else {
+          if (
+            this.options &&
+            this.options.length > 0 &&
+            this.searchText.length >= 1
+            ) {
+            this.options.forEach((option) => {
+              const searchHasOpt = 
+              option && option.toLowerCase()
+              .includes(this.searchText.toLowerCase());
+              if (searchHasOpt){
+                this.filteredResults.push(option);
+              }
+            });
+          }
+        }
+      },
+    },
+  }).mount('#search')
+
+createApp({
+  delimiters: ['[[',']]'],
+  data() {
+    return {
+      selected: [],
+      msg: "Hello Vue!",
+      con1:false,
+      con2:true,
+      c_all:true,
+    }
+  },
+  methods:{
+    tog1 ()
+    {
+      this.con1 = !this.con1;
+    },
+    tog2 (){this.con2 = !this.con2},
+    all(){this.c_all = !this.c_all},
+    one(name){
+      this.selected=true
+      if (!this.selected.includes(false)) {this.c_all=true}
+    },
+  }
+}).mount('#app')
+</script>
+

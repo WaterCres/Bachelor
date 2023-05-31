@@ -1,0 +1,99 @@
+% !TEX options=--shell-escape
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{tcolorbox}
+\usepackage{textcomp}
+\usepackage{fancyvrb}
+\usepackage{listings}
+\usepackage[bottom]{footmisc}
+\usepackage{minted}
+\usepackage{float}
+
+\setminted[python]{breaklines, framesep=2mm, fontsize=\footnotesize, numbersep=5pt}
+
+\captionsetup{font=scriptsize}
+
+% redefine \VerbatimInput
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+ %
+ frame=lines,  % top and bottom rule only
+ framesep=2em, % separation between frame and text
+ rulecolor=\color{Gray},
+ %
+ %label=\fbox{\color{Black}Backlog.todo},
+ %labelposition=topline,
+ %
+ commandchars=\|\(\), % escape character and argument delimiters for
+                      % commands within the verbatim
+ commentchar=*        % comment character
+}
+
+
+\setcounter{secnumdepth}{0}
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\bigdickenergy}[1]{\section{#1}}
+\def\shrug{\texttt{\raisebox{0.75em}{\char`\_}\char`\\\char`\_\kern-0.5ex(\kern-0.25ex\raisebox{0.25ex}{\rotatebox{45}{\raisebox{-.75ex}"\kern-1.5ex\rotatebox{-90})}}\kern-0.5ex)\kern-0.5ex\char`\_/\raisebox{0.75em}{\char`\_}}}
+
+\title{
+    Building a web application for student project allocation\\
+    \large Bachelor Project in Computer Science}
+\author{Andreas Twisttmann Askholm(aaskh20)\\{\small Advisor: Marco Chiarandini}}
+
+%\date{27/sep/92}
+\date{2023-06-01}
+
+%comments are preceded by a % sign
+%bold text \textbf{}
+%italics \textit{}
+%underlined \underline{}
+%fremhæv \emph{}
+%billede \includegraphics{}
+%matematik \(...\), $...$ eller \begin{math}...\end{math}
+
+\begin{document}
+\pagenumbering{gobble}
+\maketitle
+\vspace{\fill}
+\begin{centering}
+Repository containing all files from this project:\\
+\url{https://github.com/WaterCres/Bachelor}\\
+Website on which the appplication is hosted:\\
+\url{https://adsigno.sdu.dk/}
+
+\end{centering}
+\newpage
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+%content
+\include{abstract}
+\include{intro}
+\include{algorithm}
+\include{tools}
+\include{design}
+\include{deployment}
+\include{test}
+\include{conclusion}
+
+%end of content
+\clearpage
+\pagenumbering{roman}
+\bibliographystyle{plain}
+\bibliography{refs}
+\newpage
+\section*{Appendix}
+As an appendix to this report comes a zip archive, Adsigno.zip, which contains all the code I have written in connection with this project.
+\end{document}

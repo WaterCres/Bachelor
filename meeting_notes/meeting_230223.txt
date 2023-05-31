@@ -1,0 +1,15 @@
+- config
+	makefile
+	python src/main.py
+
+- execution
+
+- results
+	visual
+	export
+
+- input
+
+
+
+architecture diagram

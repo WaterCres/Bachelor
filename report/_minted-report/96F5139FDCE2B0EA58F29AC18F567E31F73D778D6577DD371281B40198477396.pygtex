@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{django.db.backends.signals} \PYG{k+kn}{import} \PYG{n}{connection\PYGZus{}created}
+
+\PYG{k}{def} \PYG{n+nf}{activate\PYGZus{}wal\PYGZus{}mode}\PYG{p}{(}\PYG{n}{sender}\PYG{p}{,} \PYG{n}{connection}\PYG{p}{,} \PYG{o}{**}\PYG{n}{kwargs}\PYG{p}{):}
+\PYG{+w}{    }\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}Enable Write ahead logging in sqlite.\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{k}{if} \PYG{n}{connection}\PYG{o}{.}\PYG{n}{vendor} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}sqlite\PYGZsq{}}\PYG{p}{:}
+        \PYG{n}{cursor} \PYG{o}{=} \PYG{n}{connection}\PYG{o}{.}\PYG{n}{cursor}\PYG{p}{()}
+        \PYG{n}{cursor}\PYG{o}{.}\PYG{n}{execute}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}PRAGMA journal\PYGZus{}mode=WAL;\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{connection\PYGZus{}created}\PYG{o}{.}\PYG{n}{connect}\PYG{p}{(}\PYG{n}{activate\PYGZus{}wal\PYGZus{}mode}\PYG{p}{)}
+\end{Verbatim}

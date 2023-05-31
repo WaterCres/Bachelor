@@ -1,0 +1,105 @@
+django with sqlite and bootstrap
+
+servers:
+
+gunicorn and nginx recommended by all of the frameworks
+
+Databases:
+	nosql:
+	https://aws.amazon.com/nosql/
+		pros:
+			higly scalable
+
+		cons:
+			not necessarily adhering to ACID
+
+	https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems
+
+	https://www.sqlite.org/whentouse.html
+	https://www.fullstackpython.com/databases.html
+
+
+	sqlite: <- could work for our needs
+		pros:
+			lightweight
+			portable
+		cons:
+			not very good for concurrent access
+
+
+	mysql: <- probably optimal
+		pros:
+			users with different access
+			middle ground between sqlite and postgresql
+			fast
+		cons:
+			not as good as postgresql for concurrency
+
+
+	postgresql: <- overkill?
+		pros:
+			supports more datatypes including json
+			Very good concurrency
+
+		cons:
+			heavy resource use
+
+
+web frameworks:
+	
+	flask:
+		pros:
+			good documentation on own website
+			lightweight
+			big community for support
+			guide for integrating microsoft auth
+			student page is already in flask
+
+		cons:
+			relies on thirdparty extensions
+
+	Django:
+		pros:
+			very well integrated database
+			good documentation on own website
+			everything is included
+			big community for support
+			guide for integrating microsoft auth
+			structered projects
+
+		cons:
+			monolithic
+
+
+	Taipy:
+		pros:
+			good documentation on own website
+			everything is python
+			built on flask(?)
+			very cool features for presenting and editing data
+
+		cons:
+			enterprise is needed for LDAP authorization(is this a problem?)
+			new / not a big community for support
+
+
+web technology:
+	Bootstrap:
+		pros:
+			already used for the student page
+			great for layout
+
+		cons:
+			vanilla javascript
+
+	react:
+		pros:
+
+		cons:
+			relies on third party extensions
+	vue:
+		pros:
+			built on react
+		cons:
+
+	chart.js

@@ -1,0 +1,39 @@
+CI/CD Tools
+https://www.redhat.com/en/topics/devops/what-is-ci-cd#ci/cd-tools
+
+Jenkins - FOSS, self hosted, widely used, great howto's
+
+goCD - interesting, self hosted, FOSS, new(ish) no great tutorials
+
+concourse - FOSS, self hosted
+
+_______disqualified______
+Screwdriver.cd - free, doesn't play well with imada git
+
+Semaphore - paid, great django howto,, doesn't play well with imada git
+
+watchtower - for dockerhub
+
+argos - for kubernetes
+
+CircleCI - paid
+
+Drone ci - cannot access vm to update container
+
+Railway - limited free tier, doesn't play well with imada git
+
+Travis ci - paid
+
+Github actions - not supported by gitea(imada git)
+
+Buddy - limited free tier, marketed as "Better, easier jenkins"
+
+Tekton - build for/on kubernetes
+
+Bamboo - paid
+
+Cyclic - python support in closed beta
+
+heroku - paid
+
+

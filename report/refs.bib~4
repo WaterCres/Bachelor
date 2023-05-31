@@ -1,0 +1,72 @@
+@article{Chiarandini2019,
+	abstract = {We consider the problem of allocating students to project topics satisfying side constraints and taking into account students{\rq} preferences. Students rank projects according to their preferences for the topic and side constraints limit the possibilities to team up students in the project topics. The goal is to find assignments that are fair and that maximize the collective satisfaction. Moreover, we consider issues of stability and envy from the students{\rq} viewpoint. This problem arises as a crucial activity in the organization of a first year course at the Faculty of Science of the University of Southern Denmark. We formalize the student-project allocation problem as a mixed integer linear programming problem and focus on different ways to model fairness and utilitarian principles. On the basis of real-world data, we compare empirically the quality of the allocations found by the different models and the computational effort to find solutions by means of a state-of-the-art commercial solver. We provide empirical evidence about the effects of these models on the distribution of the student assignments, which could be valuable input for policy makers in similar settings. Building on these results we propose novel combinations of the models that, for our case, attain feasible, stable, fair and collectively satisfactory solutions within a minute of computation. Since 2010, these solutions are used in practice at our institution.},
+	author = {Chiarandini, Marco and Fagerberg, Rolf and Gualandi, Stefano},
+	doi = {10.1007/s10479-017-2710-1},
+	issn = {1572-9338},
+	journal = {Annals of Operations Research},
+	number = {1},
+	pages = {39--78},
+	risfield_0_da = {2019/04/01},
+	title = {Handling preferences in student-project allocation},
+	volume = {275},
+	year = {2019}
+}
+
+@misc{compare_rdbms,
+	author = {ostezer and Drake, Mark},
+	month = feb,
+	organization = {Digital Ocean},
+	publisher = {Digital Ocean},
+	series = {Getting Started With Cloud Computing},
+	title = {SQLite vs MySQL vs PostgreSQL: A Comparison Of Relational Database Management Systems},
+	url = {https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems},
+	year = {2014}
+}
+
+@inbook{which_db,
+	author = {Makai, Matt},
+	booktitle = {Full Stack Python},
+	chapter = {Relational Databases},
+	month = {feb},
+	publisher = {Matt Makai},
+	title = {Relational Databases},
+	url = {https://www.fullstackpython.com/databases.html},
+	year = {2019}
+}
+
+@manual{sqlite_when,
+	author = {of SQLite, Developers},
+	month = {dec},
+	organization = {SQLite},
+	title = {Appropriate Uses For SQLite},
+	url = {https://www.sqlite.org/whentouse.html},
+	year = {2022}
+}
+
+@misc{SQLite_testing,
+	author = {Willison, Simon},
+	month = {Oct},
+	publisher = {Simon Willison},
+	title = {Weeknotes: DjangoCon, SQLite in Django, datasette-gunicorn},
+	url = {https://simonwillison.net/2022/Oct/23/datasette-gunicorn},
+	year = {2022}
+}
+
+@book{HuntThomas99,
+	abstract = {Programmers are craftspeople. They are trained to use a certain set of tools(editors, object mangers, version trackers) to generate a certain kind of product (programs) that will operate in some environment (operating systems on hardware assemblies). Like any other craft, computer programming has spawned a body of wisdom, most of which isn't taught at universities or in certification classes. Rather, most programmers arrive at the so-called tricks of the trade over time, by independent experimentation. In ThePragmatic Programmer, Andrew Hunt and David Thomas codify many of the truths they've discovered during their respective careers as designers of software and writers of code. Some of the authors' nuggets of pragmatism are concrete, and the path to their implementation is clear. They advise readers to learn one text editor, for example, and use it for everything. They recommend the use of version-tracking software for even the smallest projects, and promote the merits of learning regular expression syntax and a text-manipulation language. Other (perhaps more valuable) advice is softer. The authors note in their section on debugging, if you see hoof prints think horses, notzebras. That is, suspect everything, but start looking for problems in the most obvious places. They offer some advice on making estimates of time and expense, and on integrating testing into the development process. You'll want a copy of The Pragmatic Programmer for two reasons: It displays your own accumulated wisdom more cleanly than you ever bothered to state it and it introduces you to methods of work that you may not yet have considered. Working programmers will enjoy this book.},
+	added-at = {2011-05-26T17:51:49.000+0200},
+	address = {Harlow, England},
+	author = {Hunt, Andrew and Thomas, David},
+	biburl = {https://www.bibsonomy.org/bibtex/2300865320a92ff985d41e5873e812641/davef},
+	file = {InformIT Product page:http\://www.informit.com/title/020161622X:URL; Amazon Search inside:http\://www.amazon.de/gp/reader/020161622X/:URL},
+	interhash = {2ba65cfc1b1a5e8867a0c21413b3c8fb},
+	intrahash = {300865320a92ff985d41e5873e812641},
+	isbn = {978-0-201-61622-4},
+	keydf = {IT\_book42},
+	keywords = {IT\_book programming sw\_engineering},
+	publisher = {Addison-Wesley},
+	timestamp = {2011-05-26T17:51:49.000+0200},
+	title = {The Pragmatic Programmer: From Journeyman to Master},
+	year = 1999
+}
+

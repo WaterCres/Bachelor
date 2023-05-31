@@ -1,0 +1,58 @@
+ !+5	Pick a topic
+ 	+1	Group assignment
+ 	+2	student project allocation
+ 		: allow easier/automatic allocation with alternatives 
+ 		: visualize the impact/consequences of each alternative
+ 		: build pipeline for continous deployment
+ 		: let the users trust the system
+ 		: allow projects to be uploaded
+ 		: manage a database of project
+ 		: not nessesarily too much work on the student side
++5	Write a project description to be handed in no later than February 5th
++5	reseacrh tools to use
+        +4 pro/con list
+!+5     ready for test
+        +5      adjust config page
+        +4      adjust format of csv files
+        +5      integrate solver
+                -5      license to gurabi
+        +3      visualize
+                : maybe use R
+        +2      access VM
+        +2      configure remote access using nginx and cloudflare tunnel perhaps
+        +1      page layout
+
+!-5     Write report
+        : intro
+        : abstract
+        : tools
+        : design
+        : implementation
+        : deployment
+        : conclusion/future work
+
+-4      Design the database
+        -3 users
+                -2 capacity
+                -2 projects
+        -3 results
+                -2 scenario
+                        -2 data
+                        -2 assignments
+-4      design web interface
+        -2 management page for teacher
+                -1 view projects/topics
+                        -1 set private/public
+                        -1 min/max student
+                        -1 min/max teams
+                -1 view results of computation
+                -1 view alternatives
+                -1 submit new projects/topics
+        -2 admin page
+                -1 same as teacher with an added admin page
+                -1 assign permissions to "users"
+                -1 start computation
+                -1 publish results
+                -1 manage db
+        -2 student page
+                -1 for now keep the current

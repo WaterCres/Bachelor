@@ -1,0 +1,23 @@
+\contentsline {section}{Abstract}{1}{section*.2}%
+\contentsline {section}{Introduction}{2}{section*.3}%
+\contentsline {section}{The Application}{4}{section*.6}%
+\contentsline {subsection}{Input}{4}{section*.7}%
+\contentsline {subsection}{Output}{5}{section*.8}%
+\contentsline {section}{Tools}{7}{section*.9}%
+\contentsline {subsection}{Framework}{7}{section*.10}%
+\contentsline {subsubsection}{Flask}{8}{section*.12}%
+\contentsline {subsubsection}{Django}{9}{section*.14}%
+\contentsline {subsection}{Persistent data}{11}{section*.16}%
+\contentsline {section}{Architecture of the application}{13}{section*.17}%
+\contentsline {subsection}{Responsive and dynamic pages}{13}{section*.18}%
+\contentsline {subsection}{Workflow}{16}{section*.22}%
+\contentsline {subsection}{Database}{19}{section*.25}%
+\contentsline {subsubsection}{Tables and relations}{20}{section*.27}%
+\contentsline {subsection}{User authentication}{21}{section*.29}%
+\contentsline {section}{Deployment of the application}{22}{section*.30}%
+\contentsline {subsection}{Hosting a web application}{22}{section*.32}%
+\contentsline {subsection}{From development to production}{24}{section*.34}%
+\contentsline {subsubsection}{Containerisation}{26}{section*.36}%
+\contentsline {section}{Testing}{27}{section*.37}%
+\contentsline {subsection}{User testing}{27}{section*.38}%
+\contentsline {section}{Conclusions and future work}{29}{section*.39}%

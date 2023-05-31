@@ -1,0 +1,22 @@
+generate topic id/key 2 symbols capital letters and numbers
+add to er diagram:
+ users
+ teams
+ admins
+ guests
+topic -> origin
+
+ allow students to submit topics and teachers to assign themselves as advisor
+
+ allow teachers to express preferences for students
+
+consistency in capitalization
+single word menu points
+
+add pictures to topic
+allow latex
+
+hosting options
+
+most important in the end report
+START WRITING

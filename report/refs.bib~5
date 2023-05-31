@@ -1,0 +1,14 @@
+@article{Chiarandini2019,
+	risfield_0_da = {2019/04/01},
+	abstract = {We consider the problem of allocating students to project topics satisfying side constraints and taking into account students{\rq} preferences. Students rank projects according to their preferences for the topic and side constraints limit the possibilities to team up students in the project topics. The goal is to find assignments that are fair and that maximize the collective satisfaction. Moreover, we consider issues of stability and envy from the students{\rq} viewpoint. This problem arises as a crucial activity in the organization of a first year course at the Faculty of Science of the University of Southern Denmark. We formalize the student-project allocation problem as a mixed integer linear programming problem and focus on different ways to model fairness and utilitarian principles. On the basis of real-world data, we compare empirically the quality of the allocations found by the different models and the computational effort to find solutions by means of a state-of-the-art commercial solver. We provide empirical evidence about the effects of these models on the distribution of the student assignments, which could be valuable input for policy makers in similar settings. Building on these results we propose novel combinations of the models that, for our case, attain feasible, stable, fair and collectively satisfactory solutions within a minute of computation. Since 2010, these solutions are used in practice at our institution.},
+	author = {Chiarandini, Marco and Fagerberg, Rolf and Gualandi, Stefano},
+	doi = {10.1007/s10479-017-2710-1},
+	issn = {1572-9338},
+	journal = {Annals of Operations Research},
+	number = {1},
+	pages = {39--78},
+	title = {Handling preferences in student-project allocation},
+	volume = {275},
+	year = {2019}
+}
+

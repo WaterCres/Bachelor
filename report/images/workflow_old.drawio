@@ -1,0 +1,52 @@
+<mxfile host="Electron" modified="2023-04-13T11:38:21.356Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="NECe5J_XviFJ--SXIKLK" version="21.1.2" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="658" dy="389" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="e2b4A-lsNpKA3SyM7yBs-5" value="Preference submission system" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="140" y="180" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e2b4A-lsNpKA3SyM7yBs-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="e2b4A-lsNpKA3SyM7yBs-5" target="e2b4A-lsNpKA3SyM7yBs-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="330" as="sourcePoint" />
+            <mxPoint x="330" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2b4A-lsNpKA3SyM7yBs-10" value="Manually extract data&lt;br&gt;&amp;nbsp;and send to person&lt;br&gt;&amp;nbsp;who handles the solving" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e2b4A-lsNpKA3SyM7yBs-6">
+          <mxGeometry x="-0.3138" y="1" relative="1" as="geometry">
+            <mxPoint x="16" y="-29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2b4A-lsNpKA3SyM7yBs-7" value="solve problem" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="350" y="180" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e2b4A-lsNpKA3SyM7yBs-8" value="Present solution" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="560" y="180" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e2b4A-lsNpKA3SyM7yBs-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="e2b4A-lsNpKA3SyM7yBs-7" target="e2b4A-lsNpKA3SyM7yBs-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="320" as="sourcePoint" />
+            <mxPoint x="500" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2b4A-lsNpKA3SyM7yBs-11" value="Extract and &lt;br&gt;transform data&lt;br&gt;from solving program" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e2b4A-lsNpKA3SyM7yBs-9">
+          <mxGeometry x="-0.1865" y="2" relative="1" as="geometry">
+            <mxPoint x="7" y="-28" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2b4A-lsNpKA3SyM7yBs-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="e2b4A-lsNpKA3SyM7yBs-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="7.000007629394531" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2b4A-lsNpKA3SyM7yBs-13" value="Enter Topics&lt;br&gt;and priorities" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e2b4A-lsNpKA3SyM7yBs-12">
+          <mxGeometry x="-0.3966" y="-1" relative="1" as="geometry">
+            <mxPoint x="33" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

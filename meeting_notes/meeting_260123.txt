@@ -1,0 +1,35 @@
+ 
+Regardless of topic:
+	build pipeline for automatic deployment
+	visualize the results of a computation
+	present alternatives(or a way to generate them)
+	compare alternatives and decide which one to pick
+	allow authorized users to interact with the application in the way they are authorized to
+
+
+project allocation
+
+	allow easier/automatic allocation with alternatives
+	visualize the impact/consequences of each alternative
+	let the users trust the system
+	allow projects to be uploaded
+	manage a database of project
+	not nessesarily too much work on the student side
+
+
+
+group formation
+	see paper
+
+write preliminary project description ASAP
+	send to Marco
+
+
+make a decision regarding the tools
+vue, react, ...
+Django, Flask, ...
+Docker, kubernetes, ...
+
+
+
+agenda ready for each meeting

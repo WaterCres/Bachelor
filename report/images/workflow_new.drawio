@@ -1,0 +1,38 @@
+<mxfile host="Electron" modified="2023-04-13T11:47:49.171Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="MZU6GFf3omIUv_cDcKNP" version="21.1.2" type="device">
+  <diagram name="Side-1" id="NfhPoj_l_Qzd-T8Cadlz">
+    <mxGraphModel dx="696" dy="389" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MlcN1zQ_-F8QMXR9i3em-2" value="Preference submission system" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="213" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MlcN1zQ_-F8QMXR9i3em-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="MlcN1zQ_-F8QMXR9i3em-2" target="MlcN1zQ_-F8QMXR9i3em-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="523" y="340" as="sourcePoint" />
+            <mxPoint x="403" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MlcN1zQ_-F8QMXR9i3em-4" value="Manually extract data&lt;br&gt;&amp;nbsp;and import into&lt;br&gt;web application" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MlcN1zQ_-F8QMXR9i3em-3">
+          <mxGeometry x="-0.3138" y="1" relative="1" as="geometry">
+            <mxPoint x="16" y="-29" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MlcN1zQ_-F8QMXR9i3em-5" value="solve problem and&amp;nbsp;&lt;br&gt;present solution" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="423" y="190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MlcN1zQ_-F8QMXR9i3em-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="MlcN1zQ_-F8QMXR9i3em-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80.00000762939453" y="230" as="sourcePoint" />
+            <mxPoint x="363" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MlcN1zQ_-F8QMXR9i3em-10" value="Enter Topics&lt;br&gt;and priorities" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MlcN1zQ_-F8QMXR9i3em-9">
+          <mxGeometry x="-0.3966" y="-1" relative="1" as="geometry">
+            <mxPoint x="33" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

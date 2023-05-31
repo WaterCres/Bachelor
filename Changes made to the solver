@@ -1,0 +1,35 @@
+load_data.py
+
+line 64:
+	self.write_logs() -> self.write_logs(dirname)
+
+line 193:
+	project_table["ID"].astype(str) -> project_table["prj_id"].astype(str)
+
+line 288:
+	def write_logs(self): -> def write_logs(self,dirname):
+		log = dirname+"/log"
+    	os.makedirs(log, exist_ok=True)
+
+lines 291, 294, 297:
+	"log" -> log
+
+line 432:
+	if (len(filtered) <= 1): -> if (len(filtered) < 1):
+
+solve.py
+
+line 24:
+ 	sln = dirname+"/sln"
+    os.makedirs(sln,exist_ok=True)
+
+line 38:
+	stat = check_sol(solutions,problem, soldirname="sln") -> stat = check_sol(solutions, problem, soldirname=sln)
+
+line 58:
+	stat = check_sol(solutions,problem, soldirname="sln") -> stat = check_sol(solutions, problem, soldirname=sln)
+
+check_sol.py
+
+line 195:
+	write log to file in the same style as printed to console

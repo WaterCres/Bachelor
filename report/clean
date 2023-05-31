@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# script for cleaning latex folder
+
+rm *.gz *.fls *.fdb_latexmk *.aux *.log *.out *.blg *.bbl

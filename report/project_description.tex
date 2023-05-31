@@ -1,0 +1,57 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+
+
+\title{
+	Building a web application for student project allocation\\
+	\large Bachelor Project in Computer Science}
+\author{Andreas Twisttmann Askholm(aaskh20)\\{\small Advisor: Marco Chiarandini}}
+
+\date{\today}
+
+\begin{document}
+
+
+\maketitle
+
+\section{Subject}
+
+Every year in the spring semester at the University of Southern Denmark, students at the Department of Mathematics and Computer Science start the work on their bachelor project. A set of project topics are made available to the students, and the students submit a prioritized list of topics they wish to work on.\\
+After a set deadline the topics and the preferences of the students are fed to a piece of software that allocates projects to students using the algorithm described on pages 10-11 in ``Handling preferences in student-project allocation''\cite{Chiarandini2019}.\\
+Currently the allocation software lacks a convenient interface for submitting projects and the allocation process can only be started by a single person.\\
+In this project, I will build a web interface to solve these problems and a way to visualize the results of the allocation process. I will also set up a pipeline for automatic deployment of updates to the web application, with minimal downtime.
+
+\section{Goals}
+
+My goals for this project are to:
+\begin{itemize}
+	\item Set up a pipeline for automatic deployment of updates.
+	\item Provide an interface where users can submit input data(e.g. project descriptions) in different forms.
+	\item Allow authorized users to adjust parameters and start the allocation process.
+	\item Visualize the results of the allocation process along with an explanation of this result.
+\end{itemize}
+
+\section{Tasks}
+
+To achieve the goals of this project I will carry out the following tasks:
+\begin{itemize}
+	\item Identify the appropriate tools needed to build and deploy the software.
+	\item Gain knowledge about the allocation software and the algorithm described in ``Handling preferences in student-project allocation''\cite{Chiarandini2019}.
+	\item Build a web interface for the allocation software.
+	\item Securely host the application to allow access from the internet.
+	\item Implement appropriate tests for the web application. 
+	\item Review the literature suggested by my advisor.
+	\item Write a report describing the process and the work done.
+\end{itemize}
+\section{Agreement}
+
+The software implemented within this project will be made publicly available via \url{https://git.imada.sdu.dk} under MIT license (\url{https://opensource.org/licenses/MIT}).
+
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}
+
