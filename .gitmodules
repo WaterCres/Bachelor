@@ -1,0 +1,3 @@
+[submodule "resources/ProjectAssignment-master"]
+	path = resources/ProjectAssignment-master
+	url = git@github.com:WaterCres/ProjectAssignment.git
